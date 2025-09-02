@@ -2,8 +2,7 @@ export default async function handler(req, res) {
   const VERIFY_TOKEN = process.env.VERIFY_TOKEN;          // set in Vercel
   const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
   const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
-  const MODEL = process.env.OPENAI_MODEL || "ft:gpt-4.1-mini-2025-04-14:ceb-rama-mu::Bty4rHAc"; // or your FT model ID
-//   const MODEL = process.env.OPENAI_MODEL || "gpt-4.1-mini"; // or your FT model ID
+  const MODEL = process.env.OPENAI_MODEL || "gpt-4.1-mini"; // or your FT model ID
 
   // 1) Verification (GET /api/webhook?hub.mode=subscribe&hub.verify_token=...&hub.challenge=...)
   if (req.method === "GET") {
