@@ -1,0 +1,9 @@
+{
+  "name": "fb-parenting-bot",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "openai": "^4.59.0"
+  }
+}
+
